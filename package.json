@@ -1,0 +1,21 @@
+{
+  "name": "apollo-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bhuezodd/apollo-example.git",
+  "author": "Boris Huezo <huezo.dd@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prisma-generate": "prisma generate --schema=./src/prisma/schema.prisma",
+    "prisma-migrate": "prisma migrate dev --schema=./src/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.4.0",
+    "apollo-server": "^3.10.2",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.4.0"
+  }
+}
