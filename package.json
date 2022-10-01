@@ -6,7 +6,7 @@
   "author": "Boris Huezo <huezo.dd@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "babel-node index.js",
     "prisma-generate": "prisma generate --schema=./src/prisma/schema.prisma",
     "prisma-migrate": "prisma migrate dev --schema=./src/prisma/schema.prisma"
   },
@@ -16,6 +16,10 @@
     "graphql": "^16.6.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
     "prisma": "^4.4.0"
   }
 }
