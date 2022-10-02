@@ -15,8 +15,10 @@ type Query {
 
 type Mutation {
     addUser(input: CreateUserInput): User
+    updateUser(id: ID!, input: CreateUserInput): User
 }
 
 type Subscription {
     userAdded: User
+    userUpdated: User
 }
