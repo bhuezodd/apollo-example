@@ -1,5 +1,5 @@
 import { pubsub } from "utils";
-import { USER_ADDED, USER_UPDATED } from "./types";
+import { USER_ADDED, USER_UPDATED, USER_DELETED } from "./types";
 
 
 export default {
@@ -8,5 +8,8 @@ export default {
     },
     userUpdated: {
         subscribe: () => pubsub.asyncIterator(USER_UPDATED),
-    }
+    },
+    userDeleted: {
+        subscribe: () => pubsub.asyncIterator(USER_DELETED),
+    },
 }

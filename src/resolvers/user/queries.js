@@ -5,5 +5,10 @@ export default {
         const users =  User.getUsers();
 
         return users;
+    },
+    async getUser(_, { id }) {
+        const user =  User.getUser(id);
+
+        return user;
     }
 }

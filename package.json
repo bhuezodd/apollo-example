@@ -6,6 +6,7 @@
   "author": "Boris Huezo <huezo.dd@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "nodemon --exec babel-node index.js",
     "start": "babel-node index.js",
     "prisma-generate": "prisma generate --schema=./src/prisma/schema.prisma",
     "prisma-migrate": "prisma migrate dev --schema=./src/prisma/schema.prisma"
@@ -27,6 +28,7 @@
     "@babel/node": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
     "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.20",
     "prisma": "^4.4.0"
   }
 }
